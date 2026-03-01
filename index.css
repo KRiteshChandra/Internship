@@ -1,0 +1,12 @@
+#h1tag{
+    background-color:blueviolet;
+}
+.h2{
+    color: aliceblue;
+}
+h2,div{
+    background-color: yellow;
+}
+p,h3{
+    background-color: red;
+}

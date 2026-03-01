@@ -1,0 +1,15 @@
+p::after{
+    content: " hello";
+}
+.happy::marker{
+    content:"😁";
+}
+.sad::marker{
+    content:"😞";
+}
+.angry::marker{
+    content: "😡";
+}
+.cry::marker{
+    content:"😭";
+}
