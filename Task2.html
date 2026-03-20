@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 5px Solid;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button class="red">Red</button>
+    <button class="blue">Blue</button>
+    <button class="green">Green</button>
+    <script>
+        let red=document.querySelector(".red")
+        red.onclick=()=>{
+            let h1=document.querySelector("div")
+            h1.style.backgroundColor="red"
+        }
+        let blue=document.querySelector(".blue")
+        blue.onclick=()=>{
+            let h1=document.querySelector("div")
+            h1.style.backgroundColor="blue"
+        }
+        let green=document.querySelector(".green")
+        green.onclick=()=>{
+            let h1=document.querySelector("div")
+            h1.style.backgroundColor="green"
+        }
+    </script>
+</body>
+</html>

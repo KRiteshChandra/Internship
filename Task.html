@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">Hello</h1>
+
+    <button class="red">Red</button>
+    <button class="yellow">Yellow</button>
+    <button class="green">Green</button>
+
+    <script>
+        let red=document.querySelector(".red")
+        red.onclick=()=>{
+            let h1=document.querySelector("h1")
+            h1.style.color="red"
+        }
+        let yellow=document.querySelector(".yellow")
+        yellow.onclick=()=>{
+            let h1=document.querySelector("h1")
+            h1.style.color="yellow"
+        }
+        let green=document.querySelector(".green")
+        green.onclick=()=>{
+            let h1=document.querySelector("h1")
+            h1.style.color="green"
+        }
+    </script>
+</body>
+</html>
