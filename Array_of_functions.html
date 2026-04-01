@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array of Functions</title>
+</head>
+<body>
+
+<h2>Array of Functions Demo</h2>
+
+<button onclick="runFunction(0)">Say Hello</button>
+<button onclick="runFunction(1)">Show Date</button>
+<button onclick="runFunction(2)">Random Number</button>
+
+<p id="output"></p>
+
+<script>
+    // Array of functions
+    const functionsArray = [
+        function() {
+            return "Hello, welcome!";
+        },
+        function() {
+            return new Date().toString();
+        },
+        function() {
+            return Math.floor(Math.random() * 100);
+        }
+    ];
+
+    // Function to call selected function
+    function runFunction(index) {
+        document.getElementById("output").innerText = functionsArray[index]();
+    }
+</script>
+
+</body>
+</html>

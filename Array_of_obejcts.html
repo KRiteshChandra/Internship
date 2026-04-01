@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array of Objects</title>
+</head>
+<body>
+
+<h2>Array of Objects Demo</h2>
+
+<button onclick="showPerson(0)">Person 1</button>
+<button onclick="showPerson(1)">Person 2</button>
+<button onclick="showPerson(2)">Person 3</button>
+
+<p id="output"></p>
+
+<script>
+    // Array of objects
+    const people = [
+        { name: "Rohit", age: 21, city: "Bangalore" },
+        { name: "Amit", age: 22, city: "Mumbai" },
+        { name: "Sneha", age: 20, city: "Delhi" }
+    ];
+
+    // Function to display selected object
+    function showPerson(index) {
+        let person = people[index];
+
+        document.getElementById("output").innerText =
+            "Name: " + person.name +
+            ", Age: " + person.age +
+            ", City: " + person.city;
+    }
+</script>
+
+</body>
+</html>

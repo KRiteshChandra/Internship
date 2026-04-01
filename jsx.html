@@ -1,0 +1,27 @@
+// App.js
+import React, { useState } from "react";
+
+function App() {
+  const [message, setMessage] = useState("");
+
+  // Functions (like your earlier examples)
+  const actions = [
+    () => setMessage("Hello, welcome!"),
+    () => setMessage(new Date().toString()),
+    () => setMessage(Math.floor(Math.random() * 100).toString())
+  ];
+
+  return (
+    <div>
+      <h2>JSX Component Demo</h2>
+
+      <button onClick={() => actions[0]()}>Say Hello</button>
+      <button onClick={() => actions[1]()}>Show Date</button>
+      <button onClick={() => actions[2]()}>Random Number</button>
+
+      <p>{message}</p>
+    </div>
+  );
+}
+
+export default App;
