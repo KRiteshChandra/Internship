@@ -6,33 +6,25 @@
     <title>Document</title>
     <style>
         div{
-            height: 100px;
-            width: 100px;
-            border: 5px Solid;
+            display: flex;
+            justify-content: space-between;
+        }
+        img{
+            transition: transfrom;
+            transition-duration: 10s;
+        }
+        img:hover{
+            transform: scale(1.05)
         }
     </style>
 </head>
 <body>
-    <div></div>
-    <button class="red">Red</button>
-    <button class="blue">Blue</button>
-    <button class="green">Green</button>
-    <script>
-        let red=document.querySelector(".red")
-        red.onclick=()=>{
-            let h1=document.querySelector("div")
-            h1.style.backgroundColor="red"
-        }
-        let blue=document.querySelector(".blue")
-        blue.onclick=()=>{
-            let h1=document.querySelector("div")
-            h1.style.backgroundColor="blue"
-        }
-        let green=document.querySelector(".green")
-        green.onclick=()=>{
-            let h1=document.querySelector("div")
-            h1.style.backgroundColor="green"
-        }
-    </script>
+    <div>
+    <img height="500px" width="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk1sEJZ-gTtKr17cODeJb89QeZC0pQwFZ44K0lwFEQng87yaJmL9wbn9Qt9kZ4sY_AwioF4hKQNWu59sb724W7Kd0gbEzNl4NvHFZ6YgKiVvyr8tQVgnNgqi_Ft2xsjJuBn9eyzFsTXQE/s1600/autumn-lake-0904-360x640.jpg" alt="">
+    <img height="500px" width="320" src="https://wallpaperaccess.com/full/4420910.jpg" alt="">
+    <img height="500px" width="320" src="https://tse3.mm.bing.net/th/id/OIP.IwFonBJG6skscSQDeiNldgHaNL?r=0&w=750&h=1334&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <img height="500px" width="320" src="https://tse4.mm.bing.net/th/id/OIP.RVe-VKjt_ipcnm8-Y1071wHaNK?r=0&w=1080&h=1920&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <img height="500px" width="320" src="https://i.pinimg.com/736x/34/36/99/343699cc85934d03b6fa606a5cac8463.jpg" alt="">
+    </div>
 </body>
 </html>
